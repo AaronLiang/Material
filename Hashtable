@@ -1,2 +1,19 @@
 http://programmers.stackexchange.com/questions/144635/how-to-answer-to-this-hashtable-interview-question
 
+The answer is "nothing bad unless you have overridden equals()".
+
+The general point is that if two objects compare equal i.e. if
+
+ a.equals(b)
+then they must have the same hashcode i.e.
+
+ a.hashCode() == b.hashCode()
+also if two objects have different hash codes, they must not compare equal.
+
+This is especially relevant when you put objects in a hash table. This is because a hash table is an array of lists (called buckets usually). The hash bucket is indexed using the hash code, typically you use hashCode % arraySize.
+
+So when you put an object in the hash table, you take the hash code of the key and use it to determine the bucket. You then put a key-value pair in the bucket. When you want to retrieve an object from the hash table, you take the hash code of the key to find the bucket and test the key of all the key-value pairs in the bucket with .equals() to determine which object is the one you want.
+
+So if you have two key objects which compare equal but have different hash codes and you use one as a key in a hash table, you won't be able to search for it using the other key object because you'll be looking in the wrong bucket.
+
+The implementation of equals() in Object only returns true if the two objects are actually the same object and hashCode() returns the object reference. However, if you override equals() (e.g. String does so that different strings containing the same character sequence compare equal) then you must override hashCode()
