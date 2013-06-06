@@ -21,3 +21,5 @@ The implementation of equals() in Object only returns true if the two objects ar
 
 
 http://msdn.microsoft.com/en-us/library/ms379571(VS.80).aspx#datastructures20_2_topic5
+
+http://en.wikipedia.org/wiki/Hash_table
