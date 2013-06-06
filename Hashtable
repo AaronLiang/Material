@@ -17,3 +17,7 @@ So when you put an object in the hash table, you take the hash code of the key a
 So if you have two key objects which compare equal but have different hash codes and you use one as a key in a hash table, you won't be able to search for it using the other key object because you'll be looking in the wrong bucket.
 
 The implementation of equals() in Object only returns true if the two objects are actually the same object and hashCode() returns the object reference. However, if you override equals() (e.g. String does so that different strings containing the same character sequence compare equal) then you must override hashCode()
+
+
+
+http://msdn.microsoft.com/en-us/library/ms379571(VS.80).aspx#datastructures20_2_topic5
