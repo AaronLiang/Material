@@ -1,0 +1,55 @@
+Boundary value analysis simply means to select values near the boundaries of the classes. 
+So you are still dividing the input domain according to the classes then instead of selecting 
+values from the middle of the class use values from the boundaries.
+
+For example, if the input condition is a range from 20 to 70 then you have three classes of input
+
+less than 20
+between 20 and 70
+more than 70
+then for boundary value analysis select input = 19, 20, 21, 69, 70, 71. This type of analysis picks 
+up errors on the boundaries.
+
+
+Equivalence Class Testing 
+EC Testing is when you have a number of test items (e.g. values) that you want to test but because of cost (time/money) you do not have time to test them all. Therefore you group the test item into class where all items in each class are suppose to behave exactly the same. The theory is that you only need to test one of each item to make sure the system works.
+Example 1
+Children under 2 ride the buss for free. Young people pay $10, Adults $15 and Senior Citizen pay $5.
+Classes:
+Price:0 -> Age:0-1
+Price:10 -> Age:2-14 
+Price:15 -> Age:15-64
+Price:5 -> Age:65-infinity 
+
+Example 2 (more than one parameter)
+Cellphones K80, J64 and J54 run Java 5. K90 and J99 run Java 6. But there are two possible browsers FireFox and Opera, J models run FF and K models run O.
+Classes:
+Browser:FF, Java:5 -> Phones:J64,J54
+Browser:FF, Java:6 -> Phones:J99
+Browser:O, Java:5 -> Phones:K80
+Browser:O, Java:6 -> Phones:K90
+
+Dangers Of Equivalence Class Testing 
+There is a danger of using EC Testing that is rarely mentioned in the testing books but is very important to remember.
+Just because two items/values are suppose to be in the same class and behave the same, does not mean they DO behave the same.
+That means that just because you test one value in the class that ALL values in the class behave the same. Real world example of mine is with cell phones that all had a certain Java Platform. They were suppose to all work the same but they didn't in reality. So testing just one value in a class is good, but not good enough. EC Testing is a good tool, but it's not fool proof and be careful with it. If test cases are cheap and fast (like automation), test more, or why not test them all!
+
+Boundary Value Testing
+BV Testing is when you decide to test the values on the edge of each Class you have identified. The theory is that most defects is around the edges of a class. Example
+Classes:
+Price:0 -> Age:0-1 ( Boundary values 0, 1)
+Price:10 -> Age:2-14 ( Boundary values 2, 14)
+Price:15 -> Age:15-64 ( Boundary values 15, 64)
+Price:5 -> Age:65-infinity ( Boundary values 65)
+
+Critique of Boundary Value Testing
+1) I, and other test professionals I have taken courses from, are not convinced that most defects are hidden around the edges of each class. And I have never seen any studies that proves this to be the case. 2) The fact that you need to use BV Testing proves that EC Testing is flawed since you test more than one value of each class. 3) It's easy to use when using values like integers. But what is a boundary value of class of phones models or browsers versions?
+
+Hidden Boundary Value Testing
+The boundary values of a class is often based on the specification of how the system should work. This is all good and well but most systems contain boundaries that are not explained in any spec and you will need to look for yourself. E.g. 'How many characters can I put into the test field before the system fails and breaks.','How big can the data file become before it so slow to read it gets annoying'.
+Real world examples
+- Pasting one million characters into a text area in FireFox 3.5 on win 7 crashes it
+- ReCaptcha has a limit of 16003 characters, does your system handle the 413 that it passes back to it if somebody puts 16004+ characters in field. Or does it break
+
+Summary
+EC Testing and BV Testing are great tools and you should use them but they are not perfect and don't expect to find all defects using them. Use your know-how about the system and your intelligence and intuition to try more items and looks for other ways it could fail. And look for the hidden boundaries!
