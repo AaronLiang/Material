@@ -20,7 +20,7 @@ Test6: if the word is typed wrong it’s showing nearby results or not.
 Test7: search with different languages.
 
 4.	Test plan - how do you structure it, what do you need to cover?
-How to Write a Great Software Test Plan
+How to Write a Great Software Test Plan 
 by Robert Japenga
 With complex software systems, you can never test all of the functionality in all of the conditions that your customers will see. Start with this as a fact.You will never test enough!. And that at least, should cause a certain amount of discomfort. But if this fact makes you a little uncomfortable, you have taken the first step at creating a great test plan.
 Step 2 in getting started is to read and re-read The Art of Software Testingby Glenford Myers. This classic will set the stage for understanding some of the strategies and methodologies for testing software. He provides a good definition of a number of terms we will be using in this article. Myers makes a simple statement that most of us miss when we test:
