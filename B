@@ -96,7 +96,11 @@ I think we should do more tests in different environments, both Dev and QA shoul
 
 18.	How do you trade off schedule vs. quality?
 For QA, the quality is always the most important thing. If
+
 19.	How do you like to engage with the development team to maximize the effectiveness of QA?
+
 20.	What role does test automation play, give me an example of where you worked on test automation. What makes test automation effective and successful?
+
 21.	We're looking for someone to drive QA processes, not someone to execute tests. What can you tell me to convince me that if we hire you, you will raise the bar on our QA processes?
+
 22.	Based on what you’ve heard so far, how would you rate your interest on a scale of 1-10? What would make it a 10 for you?
