@@ -1,5 +1,5 @@
 1.  How would you test the search box on the Amazon Homepage?
-Test1: Search functionality should not work when no keyword is entered and prompt to enter. Check for the Max and Min limit of key words(SRS)---Sequence Retrieval System. 
+Test1: Search functionality should not work when no keyword is entered and prompt to enter. Check for the Max and Min limit of key words (SRS) ---Sequence Retrieval System. 
 Test2: List of links/paths should display matching at least one of the keyword.
 Test3: Most suitable matches should display at the top of the list.
 Test4: Link should open in the same window.
@@ -7,7 +7,7 @@ Test5: Allow user to return to the search again by resetting or fresh.
 Test6: if the word is typed wrong it’s showing nearby results or not.
 
 
-2.	If you were to test V1 of the Google Home page, what would you test for?
+2.  If you were to test V1 of the Google Home page, what would you test for?
 I will check with requirement and dev, which features are in V1, and design the test plan/cases. I will focus on the basic things, such as URL, speed, UI, simple search and the result.
 
 3.	More specific test cases (blank, etc.)
@@ -78,7 +78,10 @@ We have found that it is essential to have a different person or team execute th
 11.	Removing phone numbers from 50,000 web pages. Within 2 days need to give list of all affected files to editors supporting standard phone number formats. How do you approach?
 12.	One SEO problem is URL fragmentation - if we had to test that the URL to a specified page didn't change, and didn't get any non-standard components across the entire website - how would you approach?
 13.	MSN Messenger - one particular region complains about login problems. How do you react?
+Firstly, check the internet connection and response time in that region.
+Secondly, check with system operation people for the server status.
 14.	What do you do post release?
+I will do quick base line test, and check status for all the bugs/defects which should be fixed in this release, make sure they all have been fixed and verified.
 
 
 
@@ -95,12 +98,47 @@ Yes, in my current project, there is once, we found an issue after QA sign-off, 
 I think we should do more tests in different environments, both Dev and QA should be very careful for front end bug.
 
 18.	How do you trade off schedule vs. quality?
-For QA, the quality is always the most important thing. If
+For QA, the quality is always the most important thing. If there is no enough time to test, the first thought for QA is push back and delay. But sometimes, the business people or PM they will require to release the version as the scheduled deadline, so we should have meeting involves all the people, to do risk analysis and discuss the priority test cases, maybe we can release on time after doing the critical test cases which agreed by all the people in the meeting.
+Also, I will think about what is the reason for this situation, and try to make a better plan in the future.
 
 19.	How do you like to engage with the development team to maximize the effectiveness of QA?
+At the beginning, I will get the information for the schedule, when is the deadline for Dev? when is the deadline for QA? how long for QA to test?
+Secondly, I will read the requirements and discuss with Dev to get understanding.
+Thirdly, I will communicate with Dev frequently to keep in the same page with DEV, and if DEV finish some functionalities or features, maybe I can let them make a build for me to test.
+Fourthly, If I find any issue in the application, I will talk with Dev first, make sure we both understand the requirements, and if it is a defect, I will fire a defect and keep in centralized page to tracking them, after Dev fix the issue, I will verify it.
 
 20.	What role does test automation play, give me an example of where you worked on test automation. What makes test automation effective and successful?
+In our company, we use Selenium to do the automation test, such as my project, doing the format for print and fax prescription in 54 states, in each state, we have 4 different types of users, like Doctor, Nurse, Agent, Dentist, for each type of user, we have different rules for the prescription. So in the regression test, we must test 54*4*2*2 = 800 test cases. If we do manually, it will take two weeks to generate those files, but we have automation tool to do it, we set the username, passcode, and other details in the CSV files, the automation tool takes only 4 hours to generate over 800 files, and them I will take 1 day to review them.
 
 21.	We're looking for someone to drive QA processes, not someone to execute tests. What can you tell me to convince me that if we hire you, you will raise the bar on our QA processes?
-
+Firstly, I have been working as a DEV for about one year, I know how to write the code, write the automation tool and understand the code which written by DEV. The automation tool will increase the efficient and I will have extra time to do more test, to cover more test cases and find the defect/bug earlier.
+ 
 22.	Based on what you’ve heard so far, how would you rate your interest on a scale of 1-10? What would make it a 10 for you?
+9, I am very interested in what is you said. If I can join your team, get more understanding the project/technology, I think I will be more interested in this position. 
+
+23.	Why do you want to work for Groupon?
+Groupon is an amazing company in US, it help a lot of people to get cheap and good quality staffs. I have some friends work in Groupon, they said Groupon is like a big startup company, they use a lot of new technologies and very fast peace, people can learn a lot of things in communication skills, technical skills, management skills… 
+ 
+24.	Do you have any questions for me? - competitions: Living social, amazon local, google local...
+How big is the team here? What are the main technologies you use? How does Groupon compete with Living social, amazon local or google local? What is the daily life in the company?
+
+25.	Tell me about a time you weren't able to meet a deadline and how you handled that.
+26.	Tell me about your past experiences with meeting deadlines
+Last time QA cannot finish all the test cases before the deadline, if he signoff without finish the test cases, it will be very dangers. So we had a emergence meeting with DEV, QA, PM, and manager, did some risk analysis and we all agree for some critical test cases we must finish, also I(dev) helped QA to do the tests, because I write the code and I know the requirement very clearly, If we involve other QA to test, maybe it will waste more time and cannot guarantee the quality(He is not familiar with the requirements). Finally, we finished all the test cases before the deadline.
+From this accident, I learn that, QA and DEV should communicate frequently and keep in the same page, when DEV finish some stories, he should make a build for QA to test. This will help the whole team to increase the efficient.
+
+27.	How does this position fit into your long-term career goals?
+In the past one year, I was working as DEV, and right now I am going to be a SDET to learn more technologies, and learn how to write a good code in different environments/language in the big it company. Maybe 2-3 years later I will change back to SDE. And I hope five years later I will be a sr. SDET or SDE.
+
+28.	Why would you hire yourself?
+Firstly, I have been working as a DEV for about one year, I know how to write the code, write the automation tool and understand the code which written by DEV. The automation tool will increase the efficient and I will have extra time to do more test, to cover more test cases and find the defect/bug earlier.
+
+29.	Where do you see yourself in 5 years?
+In the past one year, I was working as DEV, and right now I am going to be a SDET to learn more technologies, and learn how to write a good code in different environments/language in the big it company. Maybe 2-3 years later I will change back to SDE. And I hope five years later I will be a sr. SDET or SDE.    
+
+30.	How would you describe Groupon to someone who has never heard of us?
+Do you like to buy something very useful, cheap, and good quality? If yes, I truly suggest you to take a look at Groupon, you will find what’s you want, what’s you like, and it will make you more happy.
+
+31.	Why test not SDE?
+In the past one year, I was working as DEV, I hope I can learn more technologies in IT area, that is good for my career. And I would like to learn how to write a good code in different environments/language in the big it company. Maybe 2-3 years later I will change back to SDE. Actually, I like to find bugs and try to break the application, this is my interesting.
+
