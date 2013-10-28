@@ -24,7 +24,7 @@ Price:5 -> Age:65-infinity
 Example 2 (more than one parameter)
 Cellphones K80, J64 and J54 run Java 5. K90 and J99 run Java 6. But there are two possible browsers FireFox and Opera, J models run FF and K models run O.
 Classes:
-Browser:FF, Java:5 -> Phones:J64,J54
+Browser:FF, Java:5 -> Phones:J64,J54 
 Browser:FF, Java:6 -> Phones:J99
 Browser:O, Java:5 -> Phones:K80
 Browser:O, Java:6 -> Phones:K90
