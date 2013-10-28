@@ -3,7 +3,7 @@ So you are still dividing the input domain according to the classes then instead
 values from the middle of the class use values from the boundaries.
 
 For example, if the input condition is a range from 20 to 70 then you have three classes of input
-
+  
 less than 20
 between 20 and 70
 more than 70
