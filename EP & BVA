@@ -40,7 +40,7 @@ Classes:
 Price:0 -> Age:0-1 ( Boundary values 0, 1)
 Price:10 -> Age:2-14 ( Boundary values 2, 14)
 Price:15 -> Age:15-64 ( Boundary values 15, 64)
-Price:5 -> Age:65-infinity ( Boundary values 65)
+Price:5 -> Age:65-infinity ( Boundary values 65)  
 
 Critique of Boundary Value Testing
 1) I, and other test professionals I have taken courses from, are not convinced that most defects are hidden around the edges of each class. And I have never seen any studies that proves this to be the case. 2) The fact that you need to use BV Testing proves that EC Testing is flawed since you test more than one value of each class. 3) It's easy to use when using values like integers. But what is a boundary value of class of phones models or browsers versions?
