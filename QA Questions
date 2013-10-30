@@ -1,0 +1,144 @@
+1.  How would you test the search box on the Amazon Homepage?
+Test1: Search functionality should not work when no keyword is entered and prompt to enter. Check for the Max and Min limit of key words (SRS) ---Sequence Retrieval System. 
+Test2: List of links/paths should display matching at least one of the keyword.
+Test3: Most suitable matches should display at the top of the list.
+Test4: Link should open in the same window.
+Test5: Allow user to return to the search again by resetting or fresh.
+Test6: if the word is typed wrong it’s showing nearby results or not.
+
+
+2.  If you were to test V1 of the Google Home page, what would you test for?
+I will check with requirement and dev, which features are in V1, and design the test plan/cases. I will focus on the basic things, such as URL, speed, UI, simple search and the result.
+
+3.	More specific test cases (blank, etc.)
+Test1: Search functionality should not work when no keyword is entered and prompt to enter. Check for the Max and Min limit of key words(SRS)---Sequence Retrieval System. 
+Test2: List of links/paths should display matching at least one of the keyword.
+Test3: Most suitable matches should display at the top of the list.
+Test4: Link should open in the same window.
+Test5: Allow user to return to the search again by resetting or fresh.
+Test6: if the word is typed wrong it’s showing nearby results or not.
+Test7: search with different languages.
+
+4.	Test plan - how do you structure it, what do you need to cover?
+How to Write a Great Software Test Plan 
+by Robert Japenga
+With complex software systems, you can never test all of the functionality in all of the conditions that your customers will see. Start with this as a fact.You will never test enough!. And that at least, should cause a certain amount of discomfort. But if this fact makes you a little uncomfortable, you have taken the first step at creating a great test plan.
+Step 2 in getting started is to read and re-read The Art of Software Testingby Glenford Myers. This classic will set the stage for understanding some of the strategies and methodologies for testing software. He provides a good definition of a number of terms we will be using in this article. Myers makes a simple statement that most of us miss when we test:
+[Software] Testing is the process of executing a program with the intent of finding errors.
+There is big difference between testing to show that something works versus testing to show that something fails.
+Step 3 is to follow these guidelines and you will be home free.
+Why Write a Software Test Plan?
+A better question is why plan anything? You plan those things that you know are more complicated than what you can do by the seat of your pants. You plan things for which order and completeness are important. Even the simplest software system is so complex and is so prone to failure, that planning to test is just as essential as planning your design.
+The second major reason is that, as an industry, we are doing a lousy job at releasing quality products. Current industry standards are that tested and released software averages more than ten significant bugs per 1000 lines of code. How many hundreds of thousand of lines was that last project? Thinking ahead and planning your testing is one way to cut that down.
+All of these are good starting reasons for having a software test plan.
+What is the difference between a Test Procedure and a Test Plan?
+Most good software development models call for both a Test Plan and a Test Procedure. Although in principle this sounds good, test procedures are extremely costly to develop, costly to maintain and don't catch enough of the bugs in a short enough time.
+Simply put - a test plan tells you what you are going to test while a test procedure tells you how you are going to test it. And a quality test plan, as outlined in this article, will cover a large percentage of systems being delivered today without the need to develop a test procedure.
+What should the Test Plan address?
+Generally there are two phases of test plan creation.
+The first should be done at the time the system is defined. The second should be created in parallel to the Software Requirements Specification.
+Software Test Plan Part 1
+This part falls under the more conventional definition of software test plans and includes:
+1. Definition and Objectives of the Phases of Testing - This should answer the questions:
+•	Will there be Module Testing? If so, what are the objectives?
+•	Will there be Integration Testing? If so, what are the objectives?
+•	Will there be Systems/Acceptance Testing? If so, what are the objectives?
+•	Will there be Beta Testing? If so, what are the objectives?
+2. Schedules - This should answer the questions:
+•	When will Part 2 of the Test Plan be written for each Phase?
+•	When will each of the Phases be scheduled?
+•	What are the dependencies of each Phase?
+•	How long will each Phase last?
+3. Responsibilities - For each phase, the people who will design, write, execute, and verify test cases as well as the people who correct the problems should be identified.
+4. Target Equipment Required - All of the target equipment required for testing should be identified. This is a much neglected part of the process. If two prototypes are required, they need to be planned very early. Will you be testing on one prototype and one pre-production piece of hardware? On how many shifts will testing take place?
+5. Test Equipment Required - All of the test equipment required for testing should be identified. Any off the shelf test equipment should be identified as well as any test equipment that will need to be created. The plan should identify what test equipment is already owned and what will need be procured either by purchasing or renting.
+Software Test Plan Part 2
+This is the part that we have found can replace the Test Procedure. The goal in this phase is to define exactly what should to be tested. And what needs to be tested but the requirements from the great SRS you created (as a result of reading our "How to Write a Great SRS").
+Here are the guidelines we follow in creating this important phase.
+1.	Create a document which is structured identically to the SRS
+2.	Take every requirement from the SRS and create one or more test cases from that document.
+3.	Provide a check box beside each test case. This allows the Test Plan to easily become a Test Report.
+4.	Create stress testing scenarios that step outside of the SRS and look at the system as a whole. For example, if the system has TCP/IP Ethernet connection on it, perform certain tests with large amounts of data being sent to the system. Or, if the system has a keyboard as input, perform testing with the keyboard being pounded with both valid and invalid data.
+5.	Provide off-design test scenarios outside of the SRS that test the system in conditions for which the SRS provides no definition. Showing that the software does what it's supposed to do is only half the battle. The other half is determining if the software is doing what it is not supposed to do.
+Test Case Generation
+The following are some general guidelines for creating test cases:
+1.	Every test case should define expected results as a result of the defined inputs.
+2.	Every requirement should be tested at and beyond its boundary conditions (for example: high and low limits) as well as mid points.
+3.	Re-read Myers on Test Case generation.  Then re-check your test cases.
+4.	Mix black box and white (or glass) box testing. This means that some test cases are written without knowing what is inside the box (black box testing). Other testing should include testing based on knowing what is inside. For example, if you know that an algorithm for generating 10,000 different outputs is done with a formula, you will not need to test all 10,000 outputs. However if you know that it is done with a table with some break points in the table where different algorithms are used at each break point, you will want to include this in your testing. Also, white box knowledge can reduce the number of actual tests necessary through equivalence partitioning. (Don’t know what equivalence partitioning is? Go To Step 3 and repeat!)
+Who should execute the Test Plan?
+We have found that it is essential to have a different person or team execute the Test Plan from those who created the software. Find individuals who like to break things! Develop a creative tension between development teams who test each other’s software.
+
+5.	How would you test the entire Amazon Homepage?
+6.	Write function to reverse the characters in a string.
+7.	Tell me how to test whether the high-order bit is set in a byte.
+8.	Write a function to count all the bits in an int value
+9.	When would you use a linked list vs. a vector?
+10.	How do you print the nodes of a tree in level order?
+11.	Removing phone numbers from 50,000 web pages. Within 2 days need to give list of all affected files to editors supporting standard phone number formats. How do you approach?
+12.	One SEO problem is URL fragmentation - if we had to test that the URL to a specified page didn't change, and didn't get any non-standard components across the entire website - how would you approach?
+13.	MSN Messenger - one particular region complains about login problems. How do you react?
+Firstly, check the internet connection and response time in that region.
+Secondly, check with system operation people for the server status.
+14.	What do you do post release?
+I will do quick base line test, and check status for all the bugs/defects which should be fixed in this release, make sure they all have been fixed and verified.
+
+
+
+QA Experience Test
+15.	Describe to me a project you were involved in which had excellent QA, and what you think made it excellent?
+For my current project, I am doing the PDF and HTML format for prescription in each state(54 in US), in each state, they have different laws and rules for the prescription. So we use a big table to track and record the test cases and status, in each state, we need to test a lot of components, if the small part passes the test, we mark as “P”, otherwise we mark as “F”. for some critical fails, it should consider as no-go bug/defect in the release, so we will fail the test case and fix the issue; for other unimportant issue, we will not fail the test case, just document as “know issue”, and they will be fixed in the next release latter.
+For this work flow, all the team member can know the status of the project from the table, and we can know the quality of the project from the table.
+
+16.	Describe to me a project you were involved in where QA missed the mark, and why?
+For my current project, at the beginning we have 6 test cases for each state,(total 54*6 ~320). Because bad communication, bad tracking, time out, and misunderstanding, QA missed some critical test cases, we got some issue in preproduction. But later, we use a table to organize the whole test plan and test cases, we resolved the problem.
+
+17.	Describe to me an example where a significant defect was found post sign-off, and what you think could have done to prevent it?
+Yes, in my current project, there is once, we found an issue after QA sign-off, the release is in preproduction, the issue is that, for Firefox V21.0, it cannot support JavaScript confirm() method (pop out a warning window and include ok and cancel two bottoms). So We involved PM and manager to decide do we need to fix the issue or not, at the end, we created an emergency patch for the issue. 
+I think we should do more tests in different environments, both Dev and QA should be very careful for front end bug.
+
+18.	How do you trade off schedule vs. quality?
+For QA, the quality is always the most important thing. If there is no enough time to test, the first thought for QA is push back and delay. But sometimes, the business people or PM they will require to release the version as the scheduled deadline, so we should have meeting involves all the people, to do risk analysis and discuss the priority test cases, maybe we can release on time after doing the critical test cases which agreed by all the people in the meeting.
+Also, I will think about what is the reason for this situation, and try to make a better plan in the future.
+
+19.	How do you like to engage with the development team to maximize the effectiveness of QA?
+At the beginning, I will get the information for the schedule, when is the deadline for Dev? when is the deadline for QA? how long for QA to test?
+Secondly, I will read the requirements and discuss with Dev to get understanding.
+Thirdly, I will communicate with Dev frequently to keep in the same page with DEV, and if DEV finish some functionalities or features, maybe I can let them make a build for me to test.
+Fourthly, If I find any issue in the application, I will talk with Dev first, make sure we both understand the requirements, and if it is a defect, I will fire a defect and keep in centralized page to tracking them, after Dev fix the issue, I will verify it.
+
+20.	What role does test automation play, give me an example of where you worked on test automation. What makes test automation effective and successful?
+In our company, we use Selenium to do the automation test, such as my project, doing the format for print and fax prescription in 54 states, in each state, we have 4 different types of users, like Doctor, Nurse, Agent, Dentist, for each type of user, we have different rules for the prescription. So in the regression test, we must test 54*4*2*2 = 800 test cases. If we do manually, it will take two weeks to generate those files, but we have automation tool to do it, we set the username, passcode, and other details in the CSV files, the automation tool takes only 4 hours to generate over 800 files, and them I will take 1 day to review them.
+
+21.	We're looking for someone to drive QA processes, not someone to execute tests. What can you tell me to convince me that if we hire you, you will raise the bar on our QA processes?
+Firstly, I have been working as a DEV for about one year, I know how to write the code, write the automation tool and understand the code which written by DEV. The automation tool will increase the efficient and I will have extra time to do more test, to cover more test cases and find the defect/bug earlier.
+ 
+22.	Based on what you’ve heard so far, how would you rate your interest on a scale of 1-10? What would make it a 10 for you?
+9, I am very interested in what is you said. If I can join your team, get more understanding the project/technology, I think I will be more interested in this position. 
+
+23.	Why do you want to work for Groupon?
+Groupon is an amazing company in US, it help a lot of people to get cheap and good quality staffs. I have some friends work in Groupon, they said Groupon is like a big startup company, they use a lot of new technologies and very fast peace, people can learn a lot of things in communication skills, technical skills, management skills… 
+ 
+24.	Do you have any questions for me? - competitions: Living social, amazon local, google local...
+How big is the team here? What are the main technologies you use? How does Groupon compete with Living social, amazon local or google local? What is the daily life in the company?
+
+25.	Tell me about a time you weren't able to meet a deadline and how you handled that.
+26.	Tell me about your past experiences with meeting deadlines
+Last time QA cannot finish all the test cases before the deadline, if he signoff without finish the test cases, it will be very dangers. So we had a emergence meeting with DEV, QA, PM, and manager, did some risk analysis and we all agree for some critical test cases we must finish, also I(dev) helped QA to do the tests, because I write the code and I know the requirement very clearly, If we involve other QA to test, maybe it will waste more time and cannot guarantee the quality(He is not familiar with the requirements). Finally, we finished all the test cases before the deadline.
+From this accident, I learn that, QA and DEV should communicate frequently and keep in the same page, when DEV finish some stories, he should make a build for QA to test. This will help the whole team to increase the efficient.
+
+27.	How does this position fit into your long-term career goals?
+In the past one year, I was working as DEV, and right now I am going to be a SDET to learn more technologies, and learn how to write a good code in different environments/language in the big it company. Maybe 2-3 years later I will change back to SDE. And I hope five years later I will be a sr. SDET or SDE.
+
+28.	Why would you hire yourself?
+Firstly, I have been working as a DEV for about one year, I know how to write the code, write the automation tool and understand the code which written by DEV. The automation tool will increase the efficient and I will have extra time to do more test, to cover more test cases and find the defect/bug earlier.
+
+29.	Where do you see yourself in 5 years?
+In the past one year, I was working as DEV, and right now I am going to be a SDET to learn more technologies, and learn how to write a good code in different environments/language in the big it company. Maybe 2-3 years later I will change back to SDE. And I hope five years later I will be a sr. SDET or SDE.    
+
+30.	How would you describe Groupon to someone who has never heard of us?
+Do you like to buy something very useful, cheap, and good quality? If yes, I truly suggest you to take a look at Groupon, you will find what’s you want, what’s you like, and it will make you more happy.
+
+31.	Why test not SDE?
+In the past one year, I was working as DEV, I hope I can learn more technologies in IT area, that is good for my career. And I would like to learn how to write a good code in different environments/language in the big it company. Maybe 2-3 years later I will change back to SDE. Actually, I like to find bugs and try to break the application, this is my interesting.
+
